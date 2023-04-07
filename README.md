@@ -9,4 +9,4 @@ Next, the script extracts the expected MD5 checksum for the file from the md5sum
 
 The script then compares the generated and expected MD5 checksums using the if statement. If the two values match, the script outputs "OK" for the file. If they don't match, the script outputs "FAIL" for the file.
 
-You can run this script by saving it as a text file with a .sh extension (e.g., md5check.sh) and executing it in the Terminal with the bash command followed by the filename (e.g., bash md5check.sh md5sum.source). Note that you need to provide the path to the md5sum.source file as an argument to the script when you run it.
+You can run this script by saving it as a text file with a .sh extension (e.g., md5check.sh) and executing it in the Terminal with the bash command followed by the filename (e.g., bash md5check.sh md5sum.source). Alternativly, youo can use 'chmod +x MD5sum.sh' to make the script executable, and then use './md5check.sh' to run the code. Note that you need to provide the path to the md5sum.source file as an argument to the script when you run it (e.g., bash md5check.sh yourMd5sum.source). 
