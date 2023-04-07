@@ -3,6 +3,8 @@ This is a Bash script that checks the MD5 checksum of each file in the current d
 
 The ls *.fastq.gz command retrieves a list of all the .fastq.gz files in the current directory and assigns them to the variable files.
 
+The md5source=$1 command pass the 1st argument when you run the script to the md5source file in the script.
+
 The script then loops through each file in the list and generates an MD5 checksum for the file using the md5sum command. The awk command extracts the first field (the checksum value) from the output of the md5sum command.
 
 Next, the script extracts the expected MD5 checksum for the file from the md5sum.source file using the grep command. The expected MD5 checksum is the first field in the line that matches the filename. The awk command extracts the first field (the checksum value) from the output of the grep command.
